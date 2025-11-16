@@ -1,12 +1,19 @@
 export default function Proof() {
+  const images = [
+    'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop'
+  ]
   return (
     <section className="py-20" id="proof">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Real results from real startups.</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-techno">Real results from real startups.</h2>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
-          {[1,2,3].map((i) => (
+          {images.map((src, i) => (
             <div key={i} className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-              <div className="aspect-[16/10] rounded-lg bg-gradient-to-br from-purple-100 via-blue-100 to-amber-100" />
+              <div className="aspect-[16/10] rounded-lg overflow-hidden relative">
+                <img src={src} alt="AI 3D render" className="absolute inset-0 h-full w-full object-cover animate-float" />
+              </div>
             </div>
           ))}
         </div>

@@ -11,10 +11,10 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
       <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-gray-200">
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-          <a href="#" className="font-extrabold text-xl">Flames.Blue</a>
+          <a href="#" className="font-techno text-xl tracking-wider bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">Flames.Blue</a>
           <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
             <a href="#problem" className="hover:text-gray-900">Problem</a>
             <a href="#promise" className="hover:text-gray-900">Promise</a>
@@ -22,7 +22,7 @@ function App() {
             <a href="#process" className="hover:text-gray-900">Process</a>
             <a href="#offer" className="hover:text-gray-900">Pricing</a>
           </nav>
-          <a href="#offer" className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-4 py-2 text-white font-semibold shadow hover:bg-black transition text-sm">Get Your Page →</a>
+          <a href="#offer" className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 text-white font-semibold shadow hover:shadow-lg hover:shadow-cyan-500/20 transition text-sm">Get Your Page →</a>
         </div>
       </header>
 
